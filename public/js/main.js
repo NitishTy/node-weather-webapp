@@ -1,5 +1,5 @@
 const fetchData = (val) => {
-    let url = 'http://localhost:3000/weather?address=' + val;
+    let url = '/weather?address=' + val;
     fetch(url).then((response) => {
         console.log(response.headers);
         response.json().then((data) => {
