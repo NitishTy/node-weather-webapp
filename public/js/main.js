@@ -1,4 +1,3 @@
-console.log('main script');
 const fetchData = (val) => {
     let url = 'http://localhost:3000/weather?address=' + val;
     fetch(url).then((response) => {
