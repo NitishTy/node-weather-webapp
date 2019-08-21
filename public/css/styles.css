@@ -52,3 +52,26 @@ img.portrait {
     border: solid 1px #454646;
     padding: 3px;
 }
+input {
+    width: 20%;
+    height: 32px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.34);
+    border-radius: 5px;
+}
+button {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #0CC1FA;
+    color: #fff;
+    padding: 5px 18px;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}

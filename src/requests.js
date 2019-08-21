@@ -6,7 +6,8 @@ const getWeather = (lat,long,callback) => {
         if(error) {
             callback({error: error});
         } else {
-            callback({timezone: body.timezone, summary: body.daily.data[0].summary, temp: body.currently.temperature, precPr: body.currently.precipProbability});
+            // console.log(body.daily.data[0]);
+            callback({timezone: body.timezone, summary: body.daily.data[0].summary, temp: body.currently.temperature, precPr: body.currently.precipProbability, sunriseTime: body.daily.data[0].sunriseTime, sunsetTime: body.daily.data[0].sunsetTime});
         }
     });
 }

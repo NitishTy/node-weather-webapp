@@ -53,7 +53,9 @@ app.get('/weather',(req,res) => {
                 timezone: data.timezone,
                 forecast: data.summary,
                 temperature: data.temp,
-                rainChances: data.precPr + '%'
+                rainChances: data.precPr + '%',
+                sunriseTime: data.sunriseTime,
+                sunsetTime: data.sunsetTime
             })
         });
     })
